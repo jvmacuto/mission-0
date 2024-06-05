@@ -1,0 +1,32 @@
+.section__padding {
+  padding: 3rem 3rem;
+}
+
+.footer {
+  background-color: #2d2d32;
+}
+
+.sb__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sb__footer-credits {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.sb__footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.myreact-icons {
+  color: red;
+  height: 2em;
+}
