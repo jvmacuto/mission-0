@@ -10,7 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@azure-rest/ai-vision-image-analysis": "^1.0.0-beta.2",
+    "@azure/cognitiveservices-computervision": "^8.2.0",
     "@fontsource/poppins": "^5.0.14",
+    "async": "^3.2.5",
+    "axios": "^1.7.2",
+    "ms-rest-azure": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1"
@@ -24,5 +29,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "This folder contains my submission of mission 0. It is about a a contract by Marketing Association New Zealand to build a quick page as a template for their new digital news home page.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }

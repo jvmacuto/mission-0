@@ -1,0 +1,18 @@
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
