@@ -1,18 +1,28 @@
 .image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.image-container {
+.image-container > h1 {
+  text-align: center;
+}
+
+.image-container > img {
+  display: block;
+  margin: auto;
+}
+.buttons-upload {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-description {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

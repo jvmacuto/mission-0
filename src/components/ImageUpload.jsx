@@ -49,31 +49,35 @@ function ImageUpload() {
   }, [results]);
   return (
     <div className="image-container">
-      <div className="button-image-container">
+      <h1>Upload an Image of your vehicle</h1>
+      <div className="buttons-upload">
         <input type="file" name="file" onChange={handleImage} />
         <button onClick={handleSubmit}>Submit</button>
       </div>
       <br />
-      <div className="image-container">
-        {image && (
-          <img
-            src={URL.createObjectURL(image)}
-            alt="image"
-            width="200"
-            height="200"
-          />
+
+      {image && (
+        <img
+          src={URL.createObjectURL(image)}
+          alt="image"
+          width="50%"
+          height="50%"
+        />
+      )}
+      <div className="image-description">
+        {image && <p>Image Name: {image.name}</p>}
+        {results && (
+          <p>Car Description: {results.description.captions[0].text}</p>
         )}
-        {image && <p>{image.name}</p>}
-        {/** {results.description?.captions.map((caption, index) => (
-          <p key={index}>
-            Description: {caption.text} (Confidence: {caption.confidence * 100}
-            %)
-          </p>
-        ))}
         <p>
           Categories:{" "}
-          {results.categories?.map((category) => category.name).join(", ")}
-        </p> */}
+          {results &&
+            results.categories.map((category) => category.name).join(", ")}
+        </p>
+        <p>
+          Dominant Colors: {results && results.color.dominantColors.join(", ")}
+        </p>
+        <p>Tags: {results && results.description.tags.join(", ")}</p>
       </div>
     </div>
   );

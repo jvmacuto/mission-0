@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/navbar.css";
-import logo from "../assets/logo-ma.webp";
+import logo from "../assets/turners.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 
@@ -14,7 +14,13 @@ function Navbar() {
   return (
     <div className="navbar">
       <header>
-        <img src={logo} alt="" className="logo" />
+        <img
+          src={logo}
+          alt=""
+          className="logo"
+          height={"50px"}
+          width={"500px"}
+        />
         <nav ref={navRef}>
           <a href="/#">Home</a>
           <a href="/#">Features</a>
